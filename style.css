@@ -14,13 +14,19 @@ background: #8EA1E1;
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    width: 1900px;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
 }
 
-img {
-    vertical-align: middle;
-    margin: auto;
+p {
+    margin-top: 1.75rem;
+    line-height: 1.75rem;
+    font-size: 16px;
 }
 
 /* variables
@@ -32,22 +38,23 @@ img {
     --download_button_main-color: #8EA1E1;
     --footer_text-color: #7289DA;
     --big_text-size : 3rem;
+    --medium_text-size : 2.5rem;
 }
 
 /* utility
 ***********/
 
-.size_1440 {
-    width: 1440px;
-    margin: auto;
-}
-
-.size_title_txt {
-    font-size: var(--size_title_text-size);
+.size_1150 {
+    width: 1150px;
+    margin: 0 auto;
 }
 
 .big_text {
     font-size: var(--big_text-size);
+}
+
+.medium_text {
+    font-size: var(--medium_text-size);
 }
 
 .color_1st {
@@ -55,6 +62,11 @@ img {
 }
 
 .color_2nd {
+    color: var(--secondary-color);
+}
+
+.bk_btn_color {
+    background-color: var(--download_button_main-color);
     color: var(--secondary-color);
 }
 
@@ -66,6 +78,10 @@ img {
 
 .float_l {
     float: left;
+}
+
+.float_r {
+    float: right;
 }
 
 .style_button {
@@ -88,9 +104,10 @@ img {
 **********/
 
 .site_header {
-    height: 700px;
+    height: 650px;
     background-image: url(./img/jumbo.png);
     background-size: cover;
+    background-position: bottom 10px;
     position: relative;
 }
 
@@ -104,18 +121,8 @@ img {
     text-align: center;
 }
 
-.logo {
-    width: 16.5%;
-}
-
-.login {
-    width: 13.5%;
-}
-
 .navigation {
-    width: 70%;
-    vertical-align: middle;
-    text-align: center;
+    width: 80%;
     line-height: 45px;
 }
 
@@ -138,6 +145,10 @@ img {
 
 /* container header
 ********************/
+.container_text {
+    width: 100%;
+    position: relative;
+}
 
 .top_title {
     width: 720px;
@@ -145,12 +156,11 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate( -50%, 50%);
 }
 
 .top_title p {
     margin-top: 2.5rem;
-    line-height: 1.75rem;
 }
 
 .button_DL {
@@ -165,6 +175,51 @@ img {
 /* main
 ********/
 
+.row {
+    width: 1150px;
+    margin: 8rem auto;
+    padding-bottom: 10rem;
+}
 
+/* .bk_wave {
+    background-image: url(./img/wave.svg);
+    background-repeat: repeat-x;
+    background-size: 50% 50%;
+    transform: scaleY(-1);
+} */
+
+.discord_description:last-child,
+.img_section {
+    text-align: center;
+}
+
+.text_section {
+    width: 30%;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+#bk_stars {
+    width: 50%;
+    margin: 1.5rem auto;
+
+}
+
+#bk_stars h2 {
+    padding-top: 3rem;
+    background-image: url(./img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: 25px 10px;
+}
+
+.text.row_4th {
+    width: 81%;
+    margin: 0 auto;
+}
+
+.row_4th > img {
+    width: 100%;
+    height: auto;
+}
 /* footer
 **********/
