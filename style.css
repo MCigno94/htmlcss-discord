@@ -1,3 +1,10 @@
+/*******************
+background: #23272A;
+background: #7289DA;
+background: #8EA1E1;
+*********************/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,3 +14,50 @@
 a {
     text-decoration: none;
 }
+
+/* variables
+*************/
+
+:root {
+    --primary-color: #23272A;
+    --light_button-color: white;
+    --download_button_main-color: #8EA1E1;
+    --footer_text-color: #7289DA;
+    --size_title_text-size : 40px;
+}
+
+/* utility
+***********/
+
+.size_1100 {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.size_title_txt {
+    font-size: var(--size_title_text-size);
+}
+
+.style_button {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.dark_button {
+    background-color: var(--primary-color)
+}
+
+.light_button {
+    background-color: var(--light_button-color)
+}
+
+/* header
+**********/
+
+
+/* main
+********/
+
+
+/* footer
+**********/
