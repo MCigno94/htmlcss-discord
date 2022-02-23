@@ -4,15 +4,23 @@ background: #7289DA;
 background: #8EA1E1;
 *********************/
 
+/* common
+**********/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    margin: auto;
 }
 
 /* variables
@@ -20,7 +28,7 @@ a {
 
 :root {
     --primary-color: #23272A;
-    --light_button-color: white;
+    --secondary-color: white;
     --download_button_main-color: #8EA1E1;
     --footer_text-color: #7289DA;
     --size_title_text-size : 40px;
@@ -29,18 +37,29 @@ a {
 /* utility
 ***********/
 
-.size_1100 {
-    width: 1100px;
-    margin: 0 auto;
+.size_1440 {
+    width: 1440px;
+    margin: auto;
 }
 
 .size_title_txt {
     font-size: var(--size_title_text-size);
 }
 
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.float_l {
+    float: left;
+}
+
 .style_button {
-    padding: 1rem;
-    border-radius: 5px;
+    padding: 0.75rem;
+    border-radius: 20px;
+    border: none;
 }
 
 .dark_button {
@@ -53,6 +72,36 @@ a {
 
 /* header
 **********/
+
+.site_header {
+    height: 700px;
+    background-image: url(./img/jumbo.png);
+    background-size: cover;
+}
+
+.navbar {
+    padding: 1rem 0;
+    margin: auto;
+}
+
+.navigation {
+    width: 70%;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+}
+
+.navigation li {
+    list-style: none;   
+    display: inline-block; 
+    text-align: center;
+    padding: 0 1rem; 
+}
+
+.navigation li a {
+    color: var(--secondary-color);
+
+}
 
 
 /* main
