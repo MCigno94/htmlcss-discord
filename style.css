@@ -21,6 +21,15 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+
+li {
+    list-style: none;   
+    display: inline-block; 
+    text-align: center;
+    padding: 0 1rem; 
 }
 
 p {
@@ -126,18 +135,6 @@ p {
     line-height: 45px;
 }
 
-.navigation li {
-    list-style: none;   
-    display: inline-block; 
-    text-align: center;
-    padding: 0 1rem; 
-}
-
-.navigation li a {
-    color: var(--secondary-color);
-    font-size: 14px;
-}
-
 #button_login {
     padding: 0.75rem;
     font-size: 1rem;
@@ -223,3 +220,45 @@ p {
 }
 /* footer
 **********/
+
+footer {
+    height: 650px;
+    background-color: var(--primary-color);
+}
+
+.footer_container {
+    padding-top: 5rem;
+}
+
+.col_medium {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.col_big {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.subtitle_footer {
+    color: var(--footer_text-color);
+    font-size: 2rem;
+}
+.italy {
+    margin: 1rem 0;
+}
+
+#italy_img {
+    width: auto;
+    height: 20px;
+}
+
+.col_little {
+    width: 15%;
+    margin: 0 5%;
+}
+
+.col_little li {
+    display: block;
+    margin-bottom: 1rem;
+}
